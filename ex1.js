@@ -14,4 +14,5 @@ console.log(ahora); // Fecha y hora actual
  * Mon Jul 10 1995, que corresponde a la fecha en formato ISO del: lunes 10 de julio de 1995
  */
 
-// const fechaPasada = new Date(...);
+const fechaPasada = new Date("1995-07-10");
+console.log(fechaPasada.toDateString());
