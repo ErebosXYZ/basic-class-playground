@@ -9,7 +9,7 @@ class Coche {
     if (this.gasolina > 0){
       this.gasolina--
     } else if (this.gasolina = 0) {
-      console.log("No se puede acelerar más. El depósito está vacío.")
+      return this.gasolina;
     }
     console.log(`gasolina: ${this.gasolina}`);
   }

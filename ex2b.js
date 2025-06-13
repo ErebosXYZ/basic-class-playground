@@ -16,8 +16,8 @@ console.log(lista); // ["manzana", "pera"]
  */
 
 function removeDuplicates(arr) {
-    const noDuplicates = new Set([arr]);
-    return noDuplicates;
+    const noDuplicates = new Set(arr);
+    return [...set];
 }
 
 // Not sure

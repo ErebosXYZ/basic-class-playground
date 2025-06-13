@@ -1,23 +1,37 @@
 class Character {
     constructor(name, attackPower, intelligence, hitPoints) {
         this.name = name;
+        this.attackPower = attackPower;
+        this.intelligence = intelligence;
+        this.hitPoints = hitPoints;
+        this.level = 0;
         // COMPLETAR
     }
 
     // Método para subir de nivel
     levelUp() {
         // COMPLETAR
+        this.level++
+        this.attackPower = this.attackPower + 1;
+        this.intelligence = this.intelligence + 1;
+        this.hitPoints = this.hitPoints + 1;
     }
 
     // Método para recibir daño
     receiveDamage(damage) {
         // COMPLETAR
-
+        this.hitPoints = this.hitPoints - damage;
     }
 
     // Método para verificar si el personaje está vivo
     isAlive() {
         // COMPLETAR
+        // if (this.hitPoints <= 0) {
+        //     return false;
+        // } else {
+        //     return true;
+        // }
+        return this.hitPoints > 0 ? true : false;
     }
 }
 // Creación de una instancia de Character para probar la clase
